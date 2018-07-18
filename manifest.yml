@@ -1,0 +1,8 @@
+---
+applications:
+- name: concourse-demo-web
+  buildpack: java_buildpack_offline
+  path: target/concourse-demo-web-0.0.1-SNAPSHOT.jar
+  memory: 1G
+  env:
+    concourseRestfulUrl: https://concourse-demo-restful.pcfdemo.com/restInfo

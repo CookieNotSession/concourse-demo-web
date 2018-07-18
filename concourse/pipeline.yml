@@ -4,15 +4,15 @@ resources:
   type: git
   source:
     branch: simple
-    uri: https://github.com/liangboyi/concourse-demo-web
+    uri: https://github.com/CookieNotSession/concourse-demo-web
 - name: cloudfoundry
   type: cf
   source:
-    api: {{cf-api}}
-    username: {{cf-username}}
-    password: {{cf-password}}
-    organization: {{cf-organization}}
-    space: {{cf-space}}
+    api: https://api.system.mypcf.idv.tw
+    username: allengreen
+    password: qwerty
+    organization: fet4IBM
+    space: sit-sapce
     skip_cert_check: true
 
 jobs:
